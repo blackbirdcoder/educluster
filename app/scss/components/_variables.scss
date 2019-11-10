@@ -14,7 +14,7 @@ $swatch_11: #ff153f;
 $swatch_12: #717171;
 $swatch_13: #a55050;
 $swatch_14: #0a0a0a;
-
+$swatch_15: #38aab8;
 //overlay
 $overlay: rgba(10, 10, 10, 0.73);
 $overlayVideoSection: rgba(10, 10, 10, 0.3);
@@ -25,9 +25,15 @@ $btn_hover: rgba(213, 0, 50, 0.5);
 $btn_disable: #c8c0c2;
 $btn_play: rgba(255, 255, 255, 0.6);
 //gradient
+$gradient_activism: linear-gradient(270.26deg, #001e62 0.13%, #012578 106.06%);
 $gradient_forum: linear-gradient(269.08deg, #011e62 0.27%, #00257a 99.68%);
 $gradient_command: linear-gradient(268.91deg, #011e62 1.12%, #00257a 102.41%);
 $gradient_project: linear-gradient(269.78deg, #011e62 0.27%, #00257a 99.68%);
+$gradient_number: linear-gradient(180deg, #39aebb 0%, #387896 100%);
+//section shadow
+$section_shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+//card
+$card_background_1: rgba(19, 19, 20, 0.42);
 
 // fonts
 $icomoon-font-family: "icomoon" !default;

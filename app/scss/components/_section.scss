@@ -164,4 +164,41 @@
 
 /*section-activism*/
 .section-activism {
+  padding-bottom: 67px;
+  background-image: $gradient_activism;
+  &__content-top {
+    padding-top: 40px;
+    text-align: center;
+    @media (min-width: $md) {
+      padding-top: 60px;
+    }
+    @media (min-width: $lg) {
+      padding-top: 80px;
+    }
+  }
+  &__heading {
+    text-transform: uppercase;
+    @media (min-width: $md) {
+      margin-bottom: 50px;
+    }
+    @media (min-width: $xl) {
+      margin-bottom: 73px;
+      font-size: 36px;
+      font-weight: 800;
+    }
+    &_small {
+      font-size: 22px;
+      @media (min-width: $xl) {
+        margin-bottom: 50px;
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
+  }
+  &__content-bottom {
+    @extend .section-activism__content-top;
+    @media (min-width: $xl) {
+      padding-top: 100px;
+    }
+  }
 }

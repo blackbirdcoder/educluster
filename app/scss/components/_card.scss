@@ -1,0 +1,107 @@
+/*card-*/
+.card-info {
+  max-width: 350px;
+  margin: auto;
+  padding: 12px;
+  background-color: $card_background_1;
+  border-radius: 4px;
+  &__box-icon {
+    margin-top: 20px;
+    &_special_margin {
+      @media (min-width: $lg) {
+        margin-top: -5px;
+      }
+    }
+  }
+  &__icon {
+    color: $swatch_9;
+    font-size: 40px;
+    &_size {
+      @media (min-width: $lg) {
+        font-size: 35px;
+      }
+    }
+  }
+  &__title {
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    @media (min-width: $lg) {
+      font-size: 21px;
+    }
+    @media (min-width: $xl) {
+      font-size: 24px;
+    }
+  }
+  &__txt {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    @media (min-width: $lg) {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+    @media (min-width: $xl) {
+      margin-top: 30px;
+    }
+  }
+  @media (min-width: $lg) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 270px;
+  }
+  &_margin-left_zero {
+    @media (min-width: $lg) {
+      margin-left: 0;
+    }
+  }
+  &_margin-right_zero {
+    @media (min-width: $lg) {
+      margin-right: 0;
+    }
+  }
+  @media (min-width: $xl) {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+.card-step {
+  margin: auto;
+  max-width: 170px;
+  padding: 5px;
+  &__number-big {
+    font-size: 75px;
+    font-weight: bold;
+    color: $swatch_15;
+    background-image: $gradient_number;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @media (min-width: $xl) {
+      font-size: 95px;
+    }
+  }
+  &__txt {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    @media (min-width: $lg) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  &_special_padding-left {
+    @media (min-width: $xxl) {
+      padding-left: 31px;
+    }
+  }
+  @media (min-width: $xxl) {
+    max-width: 204px;
+  }
+}

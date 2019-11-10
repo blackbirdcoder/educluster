@@ -23,3 +23,42 @@
 .grid > .grid__item_padding_zero {
   padding: 0;
 }
+
+//special value
+@media (min-width: $xl) {
+  .grid_special_margin {
+    margin: -43px;
+  }
+}
+
+@media (min-width: $xxl) {
+  .grid {
+    margin: -43px;
+  }
+  .grid_special_margin {
+    margin-left: -77px;
+    margin-right: -59px;
+  }
+  .grid > .grid__item {
+    padding: 20px;
+  }
+
+  .grid > .grid__item {
+    &_padding-right {
+      &_40 {
+        padding-right: 40px;
+      }
+    }
+    &_padding-left {
+      &_40 {
+        padding-left: 40px;
+      }
+    }
+    &_padding-left-right {
+      &_zero {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+}
