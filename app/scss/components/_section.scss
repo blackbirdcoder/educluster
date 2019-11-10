@@ -1,0 +1,167 @@
+/*section*/
+.section {
+  position: relative;
+  z-index: 0;
+  &__background {
+    position: absolute;
+    background-color: $swatch_4;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -2;
+  }
+  &__picture-background {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: $overlay;
+    opacity: 0.85;
+  }
+  &__foreground {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+  }
+  &__video-background > .video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -2;
+  }
+}
+
+/*section-hero */
+.section-hero {
+  margin-top: 0;
+  height: 650px;
+  &__content {
+    margin-top: 60px;
+    @media (min-width: $sm) {
+      margin-top: 80px;
+    }
+    @media (min-width: $md) {
+      margin-top: 100px;
+    }
+    @media (min-width: $xl) {
+      margin-top: 75px;
+    }
+  }
+  &__content-top {
+    text-align: center;
+  }
+  &__content-bottom {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    @media (min-width: $md) {
+      width: 480px;
+      margin: auto;
+    }
+    @media (min-width: $lg) {
+      width: 485px;
+      text-align: left;
+    }
+  }
+  &__box-button {
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    @media (min-width: $md) {
+      margin-top: 50px;
+    }
+    @media (min-width: $lg) {
+      margin-top: 60px;
+    }
+    @media (min-width: $xl) {
+      margin-right: 197px;
+    }
+  }
+  &__txt {
+    font-size: 15px;
+    @media (min-width: $sm) {
+      font-size: 16px;
+    }
+  }
+  &__heading {
+    @media (min-width: $sm) {
+      font-size: 55px;
+      line-height: 60px;
+      margin-bottom: 30px;
+    }
+    @media (min-width: $md) {
+      font-size: 60px;
+      margin-bottom: 40px;
+    }
+    @media (min-width: $lg) {
+      font-size: 70px;
+    }
+    @media (min-width: $xl) {
+      margin-bottom: 50px;
+      padding-right: 50px;
+      font-size: 72px;
+    }
+  }
+}
+
+/*section-video*/
+.section-video {
+  max-height: 800px;
+  overflow: hidden;
+  .section__overlay {
+    display: flex;
+    background-color: $overlayVideoSection;
+    z-index: 1;
+  }
+  &__video-background > .video {
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    z-index: -2;
+  }
+  &__video-background {
+    max-height: inherit;
+  }
+
+  &__video-background > .video[poster] {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+    max-height: inherit;
+    @media (min-width: 2000px) {
+      object-position: top;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    @media (min-width: $xl) {
+      padding-top: 8px;
+    }
+  }
+  &__box-button {
+    display: block;
+  }
+}
+
+/*section-activism*/
+.section-activism {
+}

@@ -1,0 +1,184 @@
+/*base*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+::-moz-focus-outer,
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: $swatch_1;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: $swatch_8;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p,
+ul,
+ol,
+figure {
+  margin: 0 0 15px 0;
+}
+
+p + button {
+  margin: 25px 0 0 0;
+}
+
+p {
+  color: $swatch_1;
+  line-height: 27px;
+}
+
+* + p,
+* + ul,
+* + ol,
+* + figure {
+  margin-top: 30px;
+}
+
+ul > li > ol,
+ul > li > ul,
+ol > li > ol,
+ol > li > ul {
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.67em 0;
+  line-height: normal;
+}
+
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 26px;
+}
+h4 {
+  font-size: 22px;
+}
+
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+  margin-top: 0.67em;
+}
+
+input,
+select,
+textarea {
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  font-size: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  background-color: #fff;
+  color: #666;
+  border-color: #1e87f0;
+}
+
+input:disabled,
+select:disabled,
+textarea:disabled {
+  background-color: #f8f8f8;
+  color: #999;
+  border-color: #e5e5e5;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+textarea::placeholder {
+  color: #999;
+}
+
+select {
+  color: #999;
+}
+select::-ms-expand {
+  display: none;
+}
+
+.page {
+  font-family: "Geometria", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  color: $swatch_1;
+  background-color: $swatch_1;
+}
+
+.content-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1185px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.navigation {
+  @media (min-width: $xl) {
+    padding-bottom: 10px;
+  }
+}
+
+.section {
+  margin-top: 60px;
+  @media (min-width: $sm) {
+    margin-top: 80px;
+  }
+  @media (min-width: $lg) {
+    margin-top: 100px;
+  }
+  @media (min-width: $xl) {
+    margin-top: 120px;
+  }
+}

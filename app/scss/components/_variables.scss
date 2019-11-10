@@ -1,0 +1,54 @@
+// color
+$swatch_0: #c4c4c4;
+$swatch_1: #ffffff;
+$swatch_2: #d2d5df;
+$swatch_3: #d50032;
+$swatch_4: #001e62;
+$swatch_5: #0a0922;
+$swatch_6: #000000;
+$swatch_7: #666666;
+$swatch_8: #414245;
+$swatch_9: #4d9abf;
+$swatch_10: #131314;
+$swatch_11: #ff153f;
+$swatch_12: #717171;
+$swatch_13: #a55050;
+$swatch_14: #0a0a0a;
+
+//overlay
+$overlay: rgba(10, 10, 10, 0.73);
+$overlayVideoSection: rgba(10, 10, 10, 0.3);
+
+//btn
+$btn_shadow: rgba(0, 0, 0, 0.25);
+$btn_hover: rgba(213, 0, 50, 0.5);
+$btn_disable: #c8c0c2;
+$btn_play: rgba(255, 255, 255, 0.6);
+//gradient
+$gradient_forum: linear-gradient(269.08deg, #011e62 0.27%, #00257a 99.68%);
+$gradient_command: linear-gradient(268.91deg, #011e62 1.12%, #00257a 102.41%);
+$gradient_project: linear-gradient(269.78deg, #011e62 0.27%, #00257a 99.68%);
+
+// fonts
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path: "../../fonts/icons/" !default;
+
+$icon-btn-slider-right: "\e901";
+$icon-btn-slider-left: "\e902";
+$icon-btn-play: "\e900";
+$icon-sing-circle: "\e903";
+$icon-sing-flag: "\e904";
+$icon-sing-gear: "\e905";
+$icon-sing-lightning: "\e906";
+$icon-sing-rhombus: "\e907";
+$icon-social-fb: "\e908";
+$icon-social-ins: "\e909";
+$icon-social-tel: "\e90a";
+$icon-menu: "\e9bd";
+
+//break point
+$sm: 480px;
+$md: 640px;
+$lg: 960px;
+$xl: 1200px;
+$xxl: 1600px;

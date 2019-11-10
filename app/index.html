@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>EDU Cluster</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body class="page">
+    <div class="content-wrap">
+      <section class="section section-hero">
+        <div class="section__background"><img class="section__picture-background" src="img/bg-hero.jpg" alt="building"/></div>
+        <div class="section__overlay"></div>
+        <div class="container">
+          <div class="section__foreground">
+            <header class="header">
+              <div class="header__content">
+                <div class="logo"><a class="logo__link" href="/"><img class="logo__picture" src="img/logo.svg" alt="EDU Cluster Logo"/><span class="logo__txt">Kharkiv EDU Cluster</span></a></div>
+                <nav class="navigation">
+                  <ul class="menu" id="menu">
+                    <li class="menu__item"><a class="menu__link" href="#line-of-activity">Напрямки діяльності</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#forum">Форум</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#joining">Приеднатись</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#project">Проекти</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#partners">Партнери</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#contact">Контакти</a></li>
+                  </ul>
+                </nav>
+                <div class="menu-mobile">
+                  <div class="menu-mobile__box-button"><a class="button-mobile" id="btnMobile" href="#"><span class="icon-menu"></span></a></div>
+                </div>
+              </div>
+            </header>
+            <div class="section-hero__content">
+              <div class="section-hero__content-top"> 
+                <h1 class="section-hero__heading">Kharkiv EDU Cluster</h1>
+              </div>
+              <div class="section-hero__content-bottom">
+                <p class="section-hero__txt">
+                  Це сучасна школа неформальної освіти для молодих лідерів. Навчаємо навичкам, формуємо особистість, 
+                  силами неформальної освіти, створюємо систему цінностей!
+                </p>
+                <div class="section-hero__box-button"><a class="button button_accent" href="https://docs.google.com/forms/d/1e281wdKclaS-gcQpBp6hr1aizX5XMgg84pjBYXVvFYQ/viewform?edit_requested=true" target="_blank">Пройти тест</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-video">
+        <div class="section-video__video-background">
+          <video class="video" id="video" poster="img/poster.jpg" loop="loop">
+            <source src="video/command-edu.mp4" type="video/mp4"/>
+          </video>
+        </div>
+        <div class="section__overlay">
+          <div class="container">
+            <div class="section__foreground">
+              <div class="section-video__content">
+                <div class="section-video__box-button">
+                  <button class="button-play" id="btnVideoPlay" type="button"><span class="icon-btn-play button-play__ico"></span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-activism" id="line-of-activity"></section>
+    </div>
+    <script src="libs/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

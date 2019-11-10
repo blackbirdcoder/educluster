@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+html
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title EDU Cluster
+    link(rel="stylesheet", href="css/normalize.css")
+    link(rel="stylesheet", href="css/base.css")
+    link(rel='stylesheet' href='css/main.css')
+  body.page
+    .content-wrap
+      section.section.section-hero
+        .section__background
+          img.section__picture-background(src="img/bg-hero.jpg", alt="building")
+        .section__overlay
+        .container
+          .section__foreground
+            header.header
+              .header__content
+                .logo
+                  a.logo__link(href="/")
+                    img.logo__picture(src="img/logo.svg", alt="EDU Cluster Logo")
+                    span.logo__txt Kharkiv EDU Cluster
+                nav.navigation
+                  ul.menu#menu
+                    li.menu__item
+                      a.menu__link(href="#line-of-activity") Напрямки діяльності
+                    li.menu__item
+                      a.menu__link(href="#forum") Форум
+                    li.menu__item
+                      a.menu__link(href="#joining") Приеднатись
+                    li.menu__item
+                      a.menu__link(href="#project") Проекти
+                    li.menu__item
+                      a.menu__link(href="#partners") Партнери
+                    li.menu__item
+                      a.menu__link(href="#contact") Контакти
+                .menu-mobile
+                  .menu-mobile__box-button
+                    a.button-mobile#btnMobile(href="#")
+                      span.icon-menu
+            .section-hero__content
+              .section-hero__content-top  
+                h1.section-hero__heading Kharkiv EDU Cluster
+              .section-hero__content-bottom
+                p.section-hero__txt Це сучасна школа неформальної освіти для молодих лідерів. 
+                  | Навчаємо навичкам, формуємо особистість, 
+                  | силами неформальної освіти, створюємо систему цінностей!
+                .section-hero__box-button
+                  a.button.button_accent(href="https://docs.google.com/forms/d/1e281wdKclaS-gcQpBp6hr1aizX5XMgg84pjBYXVvFYQ/viewform?edit_requested=true" target="_blank") Пройти тест
+      section.section.section-video
+        .section-video__video-background
+          video.video#video(poster="img/poster.jpg" loop)
+            source(src="video/command-edu.mp4" type="video/mp4")
+            //- source(src="video/command.webm" type="video/webm")
+        .section__overlay
+          .container
+            .section__foreground
+              .section-video__content
+                .section-video__box-button
+                  button.button-play#btnVideoPlay(type="button")
+                    span.icon-btn-play.button-play__ico
+      section.section.section-activism#line-of-activity
+    script(src="libs/jquery.min.js")
+    script(src="js/common.js")

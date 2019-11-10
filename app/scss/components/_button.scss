@@ -1,0 +1,107 @@
+/*button*/
+.button-mobile {
+  font-size: 35px;
+  text-decoration: none;
+  color: $swatch_1;
+  transition: all 0.2s ease;
+  &:hover {
+    color: $swatch_11;
+    text-decoration: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.button {
+  width: 100%;
+  display: inline-block;
+  padding: 13px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: none;
+  text-align: center;
+  line-height: 1;
+  color: $swatch_6;
+  border: 2px solid $swatch_3;
+  border-radius: 24px;
+  text-decoration: none;
+  background-color: transparent;
+  word-spacing: normal;
+  box-shadow: 0px 4px 4px $btn_shadow;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+  &:hover {
+    color: $swatch_6;
+    background-color: $swatch_3;
+    border: 2px solid $swatch_13;
+    box-shadow: none;
+    text-decoration: none;
+  }
+}
+
+.button.button_accent {
+  @extend .button;
+  color: $swatch_1;
+  border: 2px solid $swatch_3;
+  background-color: $swatch_3;
+  &:hover {
+    box-shadow: 0 0 10px 5px $btn_hover;
+    text-decoration: none;
+    color: $swatch_1;
+  }
+}
+
+.button.button_disable {
+  @extend .button;
+  color: $swatch_1;
+  background-color: $btn_disable;
+  border-color: $btn_disable;
+  pointer-events: none;
+}
+
+.button-play {
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background-color: $btn_play;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+  @media (min-width: $md) {
+    width: 140px;
+    height: 140px;
+  }
+  @media (min-width: $xl) {
+    width: 215px;
+    height: 215px;
+  }
+  &__ico {
+    padding-left: 10px;
+    font-size: 40px;
+    color: $swatch_11;
+    @media (min-width: $md) {
+      font-size: 60px;
+    }
+    @media (min-width: $xl) {
+      font-size: 92px;
+      padding-left: 13px;
+    }
+  }
+  &::-moz-focus-inner {
+    border: none;
+  }
+  &:hover {
+    border-color: $swatch_1;
+    opacity: 1;
+  }
+}
+
+.js-opacity {
+  opacity: 0.3;
+}

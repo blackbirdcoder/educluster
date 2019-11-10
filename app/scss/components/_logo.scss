@@ -1,0 +1,23 @@
+.logo {
+  &__link {
+    display: block;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      color: $swatch_1;
+    }
+  }
+  &__picture {
+    display: block;
+  }
+  &__txt {
+    display: block;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 21px;
+    @media (min-width: $xl) {
+      padding-top: 22px;
+    }
+  }
+}
