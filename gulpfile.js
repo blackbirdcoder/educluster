@@ -57,7 +57,7 @@ gulp.task("watch", () => {
 gulp.task("build", ["pug", "sass"], () => {
   gulp.src("app/css/*.css").pipe(gulp.dest("dist/css"));
   gulp.src("app/*.html").pipe(gulp.dest("dist"));
-  gulp.src("app/libs/*.js").pipe(gulp.dest("dist/js"));
+  gulp.src("app/libs/*.js").pipe(gulp.dest("dist/libs/"));
   gulp.src("app/js/*.js").pipe(gulp.dest("dist/js"));
   gulp.src("app/img/**/*.*").pipe(gulp.dest("dist/img"));
   gulp.src("app/fonts/**/*.*").pipe(gulp.dest("dist/fonts"));
