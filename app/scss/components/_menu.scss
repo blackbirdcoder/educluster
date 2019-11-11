@@ -17,13 +17,13 @@
       padding-left: 30px;
     }
     @media (min-width: $xl) {
-      padding-left: 65px;
+      padding-left: 63px;
     }
   }
   &__link {
     position: relative;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 17px;
     text-decoration: none;
     &:hover {
       color: $swatch_1;

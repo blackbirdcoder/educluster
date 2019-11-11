@@ -48,17 +48,21 @@
 /*section-hero */
 .section-hero {
   margin-top: 0;
-  height: 650px;
+  height: 800px;
+  min-height: 100vh;
   &__content {
-    margin-top: 60px;
+    margin-top: 40px;
     @media (min-width: $sm) {
-      margin-top: 80px;
+      margin-top: 90px;
     }
     @media (min-width: $md) {
       margin-top: 100px;
     }
+    @media (min-width: $lg) {
+      margin-top: 140px;
+    }
     @media (min-width: $xl) {
-      margin-top: 75px;
+      margin-top: 175px;
     }
   }
   &__content-top {
@@ -89,13 +93,22 @@
       margin-top: 60px;
     }
     @media (min-width: $xl) {
-      margin-right: 197px;
+      // margin-right: 197px;
     }
   }
   &__txt {
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    // line-height: 34px;
     @media (min-width: $sm) {
-      font-size: 16px;
+      font-size: 17px;
+      text-align: center;
+      font-weight: 700;
+      // line-height: 35px;
+    }
+    @media (min-width: $lg) {
+      font-size: 19px;
+      line-height: 35px;
     }
   }
   &__heading {
@@ -105,7 +118,7 @@
       margin-bottom: 30px;
     }
     @media (min-width: $md) {
-      font-size: 60px;
+      font-size: 57px;
       margin-bottom: 40px;
     }
     @media (min-width: $lg) {
@@ -113,8 +126,8 @@
     }
     @media (min-width: $xl) {
       margin-bottom: 50px;
-      padding-right: 50px;
-      font-size: 72px;
+      // padding-right: 50px;
+      font-size: 77px;
     }
   }
 }
