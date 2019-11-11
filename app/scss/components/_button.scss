@@ -101,7 +101,16 @@
     opacity: 1;
   }
 }
-
+.button.size {
+  &_14 {
+    font-size: 14px;
+  }
+}
+.button.padding {
+  &_15 {
+    padding: 15px;
+  }
+}
 .js-opacity {
   opacity: 0.3;
 }

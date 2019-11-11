@@ -203,3 +203,99 @@
     }
   }
 }
+
+/*section-forum*/
+.section-forum {
+  position: relative;
+  background-image: $gradient_forum;
+  box-shadow: $section_shadow;
+  overflow: hidden;
+  min-height: 540px;
+  z-index: 1;
+  &__overlay-picture {
+    display: none;
+    @media (min-width: $xl) {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      background-image: url(../img/archi-background.svg);
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: initial;
+      max-width: 100%;
+    }
+  }
+  &__content-top {
+    margin: auto;
+    padding-top: 40px;
+    text-align: center;
+    @media (min-width: $md) {
+      padding-top: 60px;
+    }
+    @media (min-width: $xl) {
+      padding-top: 80px;
+    }
+    @media (min-width: $xxl) {
+      padding-right: 20px;
+    }
+  }
+  &__content-bottom {
+    display: block;
+    @media (min-width: $xl) {
+      display: none;
+    }
+  }
+  &__heading {
+    font-size: 25px;
+    text-transform: uppercase;
+    @media (min-width: $lg) {
+      font-size: 36px;
+    }
+  }
+  &__txt {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    font-weight: 400;
+    max-width: 484px;
+    @media (min-width: $md) {
+      margin-top: 30px;
+    }
+    @media (min-width: $lg) {
+      font-size: 16px;
+    }
+  }
+  &__box-button {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 182px;
+    @media (min-width: $md) {
+      margin-top: 38px;
+    }
+    @media (min-width: $xl) {
+      margin-top: 35px;
+    }
+  }
+  &__figure {
+    margin-top: 30px;
+    max-width: 100%;
+    @media (min-width: $md) {
+      margin-top: 38px;
+    }
+  }
+  &__picture {
+    display: block;
+    margin: auto;
+    max-height: 234px;
+  }
+}
+
+/*section-joining*/
+.section-joining {
+}
