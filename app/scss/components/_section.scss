@@ -311,4 +311,27 @@
 
 /*section-joining*/
 .section-joining {
+  &__content-top {
+    text-align: center;
+  }
+  &__heading {
+    color: $swatch_5;
+    text-transform: uppercase;
+    font-size: 25px;
+    @media (min-width: $md) {
+      font-size: 30px;
+    }
+    @media (min-width: $lg) {
+      font-size: 36px;
+    }
+  }
+  &__content-basic {
+    margin-top: 25px;
+    @media (min-width: $sm) {
+      margin-top: 40px;
+    }
+    @media (min-width: $md) {
+      margin-top: 55px;
+    }
+  }
 }

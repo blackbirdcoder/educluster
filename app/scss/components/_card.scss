@@ -105,3 +105,60 @@
     max-width: 204px;
   }
 }
+
+.card-join {
+  margin: auto;
+  padding: 20px;
+  max-width: 330px;
+  border-radius: 4px;
+  background-image: $gradient_command;
+  box-shadow: $section_shadow;
+  text-align: center;
+  &__heading {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 22px;
+    color: $swatch_1;
+    text-transform: uppercase;
+    max-width: 215px;
+    @media (min-width: $md) {
+      font-size: 24px;
+    }
+  }
+  &__box-icon > .card-join__icon {
+    color: $swatch_3;
+    font-size: 15px;
+  }
+  &__box-icon {
+    margin-top: 70px;
+    @media (min-width: $sm) {
+      margin-top: 50px;
+    }
+  }
+  &__box-button {
+    margin-top: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    width: 182px;
+    @media (min-width: $sm) {
+      margin-bottom: 40px;
+    }
+  }
+  &__list {
+    margin-top: 56px;
+    @media (min-width: $sm) {
+      margin-top: 49px;
+    }
+  }
+  @media (min-width: $lg) {
+    min-height: 432px;
+  }
+  &_margin_left_zero {
+    margin-left: 0;
+  }
+  &_margin_right_zero {
+    margin-right: 0;
+  }
+}

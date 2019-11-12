@@ -1,0 +1,39 @@
+/*list*/
+.list-marked {
+  text-align: left;
+  padding-left: 10px;
+  &__item {
+    position: relative;
+    color: $swatch_2;
+    font-size: 15px;
+    text-transform: none;
+    font-weight: 400;
+    @media (min-width: $md) {
+      font-size: 16px;
+    }
+  }
+  &__item + .list-marked__item {
+    margin-top: 12px;
+  }
+  &__item::before {
+    content: "\e903";
+    font-family: $icomoon-font-family;
+    line-height: 0;
+    position: relative;
+    right: 8px;
+    bottom: 1px;
+    font-size: 7px;
+    color: $swatch_3;
+  }
+  @media (min-width: $sm) {
+    padding-left: 20px;
+  }
+  @media (min-width: $md) {
+    padding-left: 22px;
+  }
+  &_special_margin-top {
+    @media (min-width: $lg) {
+      margin-top: 20px;
+    }
+  }
+}
