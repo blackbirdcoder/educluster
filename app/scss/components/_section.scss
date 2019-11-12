@@ -114,7 +114,7 @@
   &__heading {
     &_special_position {
       display: block;
-      @media (min-width: $sm) {
+      @media (min-width: $md) {
         display: inline;
       }
     }
