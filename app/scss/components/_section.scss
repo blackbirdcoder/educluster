@@ -318,6 +318,7 @@
     color: $swatch_5;
     text-transform: uppercase;
     font-size: 25px;
+    display: inline-block;
     @media (min-width: $md) {
       font-size: 30px;
     }
@@ -328,10 +329,13 @@
   &__content-basic {
     margin-top: 25px;
     @media (min-width: $sm) {
-      margin-top: 40px;
+      margin-top: 30px;
     }
     @media (min-width: $md) {
-      margin-top: 55px;
+      margin-top: 40px;
+    }
+    @media (min-width: $xl) {
+      margin-top: 50px;
     }
   }
 }

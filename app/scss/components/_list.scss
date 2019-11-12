@@ -24,6 +24,10 @@
     bottom: 1px;
     font-size: 7px;
     color: $swatch_3;
+    @media (min-width: $xl) {
+      right: 10px;
+      font-size: 8px;
+    }
   }
   @media (min-width: $sm) {
     padding-left: 20px;
