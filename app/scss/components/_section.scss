@@ -112,6 +112,12 @@
     }
   }
   &__heading {
+    &_special_position {
+      display: block;
+      @media (min-width: $sm) {
+        display: inline;
+      }
+    }
     @media (min-width: $sm) {
       font-size: 55px;
       line-height: 60px;
