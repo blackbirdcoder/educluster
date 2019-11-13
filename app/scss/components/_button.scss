@@ -114,3 +114,52 @@
 .js-opacity {
   opacity: 0.3;
 }
+
+.button-slider {
+  display: inline-block;
+  padding: 3px;
+  outline: none;
+  font-size: 50px;
+  color: #38aab8;
+  background-image: $gradient_btn_slider;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  &:hover {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-image: $gradient_btn_slider_hover;
+  }
+  &_special_margin {
+    margin: 12px;
+    &_right {
+      margin-right: 90px;
+      @media (min-width: $md) {
+        margin-right: 365px;
+      }
+      @media (min-width: $lg) {
+        margin-right: 100px;
+      }
+    }
+    &_left {
+      &_zero {
+        @media (min-width: $md) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  &_full_position {
+    @media (min-width: $xxl) {
+      &_right {
+        position: absolute;
+        right: 1100px;
+      }
+      &_left {
+        position: absolute;
+        left: 1200px;
+      }
+    }
+  }
+}

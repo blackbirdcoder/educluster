@@ -345,3 +345,29 @@
     }
   }
 }
+
+/*section-project*/
+.section-project {
+  &__content-top {
+    text-align: center;
+    @media (min-width: $xl) {
+      padding-top: 25px;
+    }
+  }
+  &__heading {
+    text-transform: uppercase;
+    color: $swatch_5;
+    @media (min-width: $lg) {
+      font-size: 36px;
+    }
+  }
+  &__content-slider {
+    position: relative;
+    @media (min-width: $md) {
+      margin-top: 30px;
+    }
+    @media (min-width: $xl) {
+      margin-top: 50px;
+    }
+  }
+}

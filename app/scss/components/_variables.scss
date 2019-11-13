@@ -29,12 +29,17 @@ $gradient_activism: linear-gradient(270.26deg, #001e62 0.13%, #012578 106.06%);
 $gradient_forum: linear-gradient(269.08deg, #011e62 0.27%, #00257a 99.68%);
 $gradient_command: linear-gradient(268.91deg, #011e62 1.12%, #00257a 102.41%);
 $gradient_project: linear-gradient(269.78deg, #011e62 0.27%, #00257a 99.68%);
+$gradient_project_card: linear-gradient(361.78deg, #011e6294 0.27%, #00257a57);
 $gradient_number: linear-gradient(180deg, #39aebb 0%, #387896 100%);
+$gradient_btn_slider: linear-gradient(180deg, #4d9abf 0%, #39aebb 100%);
+$gradient_btn_slider_hover: linear-gradient(180deg, #39aebb 0%, #4d9abf 100%);
 //section shadow
 $section_shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+$slider_project_shadow: 2px 4px 7px 0px rgba(0, 0, 0, 0.4);
 //card
 $card_background_1: rgba(19, 19, 20, 0.42);
-
+// special radius
+$radius: 4px;
 // fonts
 $icomoon-font-family: "icomoon" !default;
 $icomoon-font-path: "../fonts/icons/" !default;

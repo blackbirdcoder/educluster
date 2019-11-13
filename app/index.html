@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>EDU Cluster</title>
     <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
     <link rel="stylesheet" href="css/base.css"/>
     <link rel="stylesheet" href="css/main.css"/>
   </head>
@@ -192,10 +193,77 @@
             </div>
           </div>
         </section>
-        <section class="section section-project" id="project"></section>
+        <section class="section section-project" id="project">
+          <div class="container">
+            <div class="section-project__content-top">
+              <h2 class="section-project__heading">наші проекти</h2>
+            </div>
+            <div class="section-project__content-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card-project">
+                      <div class="card-project__content-top">
+                        <div class="card-project__overlay">
+                          <div class="card-project__foreground">
+                            <figure class="card-project__figure"><img class="card-project__picture" src="img/project-eduschool.jpg" alt="edu school"/></figure>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-project__content-bottom">
+                        <h4 class="card-project__heading">EDU school</h4>
+                        <p class="card-project__txt">
+                          Організовуємо майстер-класи, лекції та тренінги за 8 напрямками: командоутворення, бізнес-мислення, фінанси, діджитал та інші.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card-project">
+                      <div class="card-project__content-top">
+                        <div class="card-project__overlay">
+                          <div class="card-project__foreground">
+                            <figure class="card-project__figure"><img class="card-project__picture" src="img/project-kl.jpg" alt="personality club"/></figure>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-project__content-bottom">
+                        <h4 class="card-project__heading">Клуб Особистостей</h4>
+                        <p class="card-project__txt">
+                          Знайомимо з відомими людьми Харкова. Надихаємо та допомагаємо повірити в себе та знайти своє призначення.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card-project">
+                      <div class="card-project__content-top">
+                        <div class="card-project__overlay">
+                          <div class="card-project__foreground">
+                            <figure class="card-project__figure"><img class="card-project__picture" src="img/project-tot.jpg" alt="Training of Trainers"/></figure>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-project__content-bottom">
+                        <h4 class="card-project__heading">Training of Trainers (ТоТ)</h4>
+                        <p class="card-project__txt">
+                          5-денний курс для майбутніх менторів. Будуємо мапи особистого розвитку. Випускники формують шкільне самоврядування.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-swiper-box-button slider-swiper-box-button_position_middle">
+                <div class="icon-btn-slider-left button-slider button-slider_special_margin button-slider_special_margin_right button-slider_full_position_right"></div>
+                <div class="icon-btn-slider-right button-slider button-slider_special_margin button-slider_special_margin_left_zero button-slider_full_position_left"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section-partners" id="partners"></section>
       </main>
     </div>
     <script src="libs/jquery.min.js"></script>
+    <script src="libs/swiper.min.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/common.js"></script>
   </body>
 </html>

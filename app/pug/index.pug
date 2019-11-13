@@ -6,6 +6,7 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title EDU Cluster
     link(rel="stylesheet", href="css/normalize.css")
+    link(rel="stylesheet", href="css/swiper.min.css")
     link(rel="stylesheet", href="css/base.css")
     link(rel='stylesheet' href='css/main.css')
   body.page
@@ -163,5 +164,50 @@ html
                     .card-join__box-button
                       a.button.button_accent.size_14.padding_15(href="https://forms.gle/VRRNa2EGhCxdmEyT9" target="_blank") Приєднатися
         section.section.section-project#project
+          .container
+            .section-project__content-top
+              h2.section-project__heading наші проекти
+            .section-project__content-slider
+              .swiper-container
+                .swiper-wrapper
+                  .swiper-slide
+                    .card-project
+                      .card-project__content-top
+                        .card-project__overlay
+                          .card-project__foreground
+                            figure.card-project__figure
+                              img.card-project__picture(src="img/project-eduschool.jpg", alt="edu school")
+                      .card-project__content-bottom
+                        h4.card-project__heading EDU school
+                        p.card-project__txt Організовуємо майстер-класи, лекції та тренінги за 8 напрямками: 
+                          |командоутворення, бізнес-мислення, фінанси, діджитал та інші.
+                  .swiper-slide
+                    .card-project
+                      .card-project__content-top
+                        .card-project__overlay
+                          .card-project__foreground
+                            figure.card-project__figure
+                              img.card-project__picture(src="img/project-kl.jpg", alt="personality club")
+                      .card-project__content-bottom
+                        h4.card-project__heading Клуб Особистостей
+                        p.card-project__txt Знайомимо з відомими людьми Харкова. 
+                          |Надихаємо та допомагаємо повірити в себе та знайти своє призначення.
+                  .swiper-slide
+                    .card-project
+                      .card-project__content-top
+                        .card-project__overlay
+                          .card-project__foreground
+                            figure.card-project__figure
+                              img.card-project__picture(src="img/project-tot.jpg", alt="Training of Trainers")
+                      .card-project__content-bottom
+                        h4.card-project__heading Training of Trainers (ТоТ)
+                        p.card-project__txt 5-денний курс для майбутніх менторів. 
+                          |Будуємо мапи особистого розвитку. Випускники формують шкільне самоврядування.
+              .slider-swiper-box-button.slider-swiper-box-button_position_middle
+                .icon-btn-slider-left.button-slider.button-slider_special_margin.button-slider_special_margin_right.button-slider_full_position_right
+                .icon-btn-slider-right.button-slider.button-slider_special_margin.button-slider_special_margin_left_zero.button-slider_full_position_left
+        section.section.section-partners#partners
     script(src="libs/jquery.min.js")
+    script(src="libs/swiper.min.js")
+    script(src="js/slider.js")
     script(src="js/common.js")

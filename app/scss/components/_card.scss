@@ -111,6 +111,7 @@
   padding: 20px;
   max-width: 330px;
   border-radius: 4px;
+  background-color: $swatch_4;
   background-image: $gradient_command;
   box-shadow: $section_shadow;
   text-align: center;
@@ -180,6 +181,65 @@
   &_margin_auto {
     @media (min-width: $xl) {
       margin: auto;
+    }
+  }
+}
+
+.card-project {
+  margin: auto;
+  margin-bottom: 11px;
+  max-width: 330px;
+  height: 513px;
+  background-color: $swatch_4;
+  background-image: $gradient_project;
+  border-radius: $radius;
+  overflow: hidden;
+  @media (min-width: $sm) {
+    box-shadow: $slider_project_shadow;
+  }
+  &__content-top {
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+  }
+  &__overlay {
+    background-image: $gradient_project_card;
+  }
+  &__foreground {
+    height: 100%;
+    position: relative;
+    z-index: -1;
+  }
+  &__figure {
+    max-width: 330px;
+    max-height: 220px;
+  }
+  &__picture {
+    display: block;
+    height: 220px;
+    object-fit: cover;
+  }
+  &__content-bottom {
+    padding: 35px 35px 35px 40px;
+  }
+  &__heading {
+    text-transform: uppercase;
+    color: $swatch_1;
+    font-size: 22px;
+    @media (min-width: $lg) {
+      font-size: 24px;
+    }
+  }
+  &__txt {
+    text-align: left;
+    color: $swatch_2;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    @media (min-width: $lg) {
+      font-size: 16px;
     }
   }
 }
