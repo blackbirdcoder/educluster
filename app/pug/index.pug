@@ -46,9 +46,8 @@ html
                 h1.section-hero__heading Kharkiv 
                   span.section-hero__heading_special_position EDU Cluster
               .section-hero__content-bottom
-                p.section-hero__txt Це сучасна школа неформальної освіти для молодих лідерів. 
-                  | Навчаємо навичкам, формуємо особистість, 
-                  | силами неформальної освіти, створюємо систему цінностей!
+                p.section-hero__txt Об’єднуємо представників неформальної освіти, викладачів ВНЗ, учнів та батьків. 
+                  | Вивчаємо та формуємо тренди, популяризуємо опанування м’яких навичок.
                 .section-hero__box-button
                   a.button.button_accent(href="https://docs.google.com/forms/d/1e281wdKclaS-gcQpBp6hr1aizX5XMgg84pjBYXVvFYQ/viewform?edit_requested=true" target="_blank") Пройти тест
       section.section.section-video
@@ -117,10 +116,10 @@ html
           .container
             .section-forum__content-top
               h2.section-forum__heading kharkiv edu forum 30.11.2019
-              p.section-forum__txt У слабопеременних полях (при флуктуаціях на рівні одиниць відсотків) 
-                | домішка опромінює Ексімер. Очевидно, що промінь підсилює екзотермічний надпровідник. Потік.
+              p.section-forum__txt Про неформальну освіту і новий підхід до навчання. Презентуємо власні дослідження навичок,
+                | які будуть необхідні у майбутньому, і розповімо де їм навчитися.
               .section-forum__box-button
-                a.button.button_accent.size_14.padding_15(href="#") Записатися
+                a.button.button_accent.size_14.padding_15(href="https://2event.com/ru/events/1852563" target="_blank") Записатися
             .section-forum__content-bottom
               figure.section-forum__figure
                 img.section-forum__picture(src="img/archi-mirror-spray.svg" alt="glass jet Kharkiv")
@@ -168,7 +167,7 @@ html
             .section-project__content-top
               h2.section-project__heading наші проекти
             .section-project__content-slider
-              .swiper-container
+              .swiper-container#swiperContainerOne
                 .swiper-wrapper
                   .swiper-slide
                     .card-project
@@ -204,9 +203,227 @@ html
                         p.card-project__txt 5-денний курс для майбутніх менторів. 
                           |Будуємо мапи особистого розвитку. Випускники формують шкільне самоврядування.
               .slider-swiper-box-button.slider-swiper-box-button_position_middle
-                .icon-btn-slider-left.button-slider.button-slider_special_margin.button-slider_special_margin_right.button-slider_full_position_right
-                .icon-btn-slider-right.button-slider.button-slider_special_margin.button-slider_special_margin_left_zero.button-slider_full_position_left
+                .icon-btn-slider-left.button-slider-right-play.button-slider.button-slider_special_margin.button-slider_special_margin_right.button-slider_full_position_right
+                .icon-btn-slider-right.button-slider-left-play.button-slider.button-slider_special_margin.button-slider_special_margin_left_zero.button-slider_full_position_left
         section.section.section-partners#partners
+          .container
+            .section-partners__content-top
+              h2.section-partners__heading наші партнери
+            .section-partners__content-middle
+              .grid
+                .grid__item.grid__item_padding-right_40.width-1-1.width-1-2-sm.width-1-4-lg
+                  .card-link
+                    .card-link__content.card-link__content_margin_right_zero.card-link__content_margin_right_auto
+                      .card-link__box-link
+                        a(href="https://www.city.kharkov.ua" target="_blank")
+                          img.card-link__picture(src="img/partners/1mr.png", alt="Харків міська рада")
+                .grid__item.width-1-1.width-1-2-sm.width-1-4-lg
+                  .card-link
+                    .card-link__content.card-link__content_margin_left_zero.card-link__content_margin_left_auto
+                      .card-link__box-link
+                        a(href="https://synergy-park.com" target="_blank")
+                          img.card-link__picture(src="img/partners/2sinrgeria.png", alt="Научный парк Синергия")
+                .grid__item.width-1-1.width-1-2-sm.width-1-4-lg
+                  .card-link
+                    .card-link__content.card-link__content_margin_right_zero.card-link__content_margin_right_auto
+                      .card-link__box-link
+                        a(href="https://www.facebook.com/link.kh/ " target="_blank")
+                          img.card-link__picture(src="img/partners/3link.png", alt="LINK")
+                .grid__item.grid__item_padding-left_40.width-1-1.width-1-2-sm.width-1-4-lg
+                  .card-link
+                    .card-link__content.card-link__content_margin_left_zero.card-link__content_margin_left_auto
+                      .card-link__box-link
+                        a(href="http://www.street-culture.net" target="_blank")
+                          img.card-link__picture(src="img/partners/4street.png", alt="Street Culture")
+                .grid__item.grid__item_padding-right_40.width-1-1.width-1-2-sm.width-1-4-lg
+                  .card-link
+                    .card-link__content.card-link__content_margin_right_zero.card-link__content_margin_right_auto
+                      .card-link__box-link
+                        a(href=" https://kharkiv.ithillel.ua" target="_blank")
+                          img.card-link__picture(src="img/partners/5hillel.png", alt="it hillel")
+                .grid__item.width-1-1.width-1-2-sm.width-1-4-lg
+                  .card-link
+                    .card-link__content.card-link__content_margin_left_zero.card-link__content_margin_left_auto
+                      .card-link__box-link
+                        a(href="http://allstars-dance.com" target="_blank")
+                          img.card-link__picture(src="img/partners/6allstars-a.png", alt="all stars")
+                .grid__item.width-1-1.width-1-2-sm.width-1-4-lg
+                  .card-link
+                    .card-link__content.card-link__content_margin_right_zero.card-link__content_margin_right_auto
+                      .card-link__box-link
+                        a(href="http://www.kharkivosvita.net.ua/content/35" target="_blank")
+                          img.card-link__picture(src="img/partners/7br.jpg", alt="Батьківська рада")
+                .grid__item.grid__item_padding-left_40.width-1-1.width-1-2-sm.width-1-4-lg
+                  .card-link
+                    .card-link__content.card-link__content_margin_left_zero.card-link__content_margin_left_auto
+                      .card-link__box-link
+                        a(href=" https://ru-ru.facebook.com/reformkharkiv/" target="_blank")
+                          img.card-link__picture(src="img/partners/8or.png", alt="Офіс реформ")
+            .section-partners__content-middle.section-partners__content-middle_hidden#partnersContentHidden
+              .grid.grid_margin_top_10.grid_margin_top_43
+                .grid__item.grid__item_padding-right_40.width-1-1.width-1-2-sm.width-1-4-lg
+                  .card-link
+                    .card-link__content.card-link__content_margin_right_zero.card-link__content_margin_right_auto
+                      .card-link__box-link
+                        a(href="https://testoschool.com" target="_blank")
+                          img.card-link__picture(src="img/partners/9testo.png", alt="Тесто")
+                .grid__item.width-1-1.width-1-2-sm.width-1-4-lg
+                  .card-link
+                    .card-link__content.card-link__content_margin_left_zero.card-link__content_margin_left_auto
+                      .card-link__box-link
+                        a(href="https://eruditus.ua" target="_blank")
+                          img.card-link__picture(src="img/partners/10eruditus.png", alt="Эрудитус")
+                .grid__item.width-1-1.width-1-2-sm.width-1-4-lg
+                  .card-link
+                    .card-link__content.card-link__content_margin_right_zero.card-link__content_margin_right_auto
+                      .card-link__box-link
+                        a(href="https://sukhari.com.ua" target="_blank")
+                          img.card-link__picture(src="img/partners/11syhari.png", alt="sukhari")
+                .grid__item.grid__item_padding-left_40.width-1-1.width-1-2-sm.width-1-4-lg
+                  .card-link
+                    .card-link__content.card-link__content_margin_left_zero.card-link__content_margin_left_auto
+                      .card-link__box-link
+                        a(href="https://www.facebook.com/fss.consulting.ua" target="_blank")
+                          img.card-link__picture(src="img/partners/12fss.png", alt="FSS")
+                .grid__item.grid__item_padding-right_40.width-1-1.width-1-2-sm.width-1-4-lg
+                  .card-link
+                    .card-link__content.card-link__content_margin_right_zero.card-link__content_margin_right_auto
+                      .card-link__box-link
+                        a(href="https://www.facebook.com/4ECONSULTINGCOMPANY/" target="_blank")
+                          img.card-link__picture(src="img/partners/13-4e.jpg", alt="4E")
+                .grid__item.width-1-1.width-1-2-sm.width-1-4-lg
+                  .card-link
+                    .card-link__content.card-link__content_margin_left_zero.card-link__content_margin_left_auto
+                      .card-link__box-link
+                        a(href="https://it-kharkiv.com/ru/" target="_blank")
+                          img.card-link__picture(src="img/partners/14itcluster.png", alt="it cluster")
+                .grid__item.width-1-1.width-1-2-sm.width-1-4-lg
+                  .card-link
+                    .card-link__content.card-link__content_margin_right_zero.card-link__content_margin_right_auto
+                      .card-link__box-link
+                        a(href=" https://kharkiv.unit.city/ru/main/" target="_blank")
+                          img.card-link__picture(src="img/partners/15unit.png", alt="unit")
+                .grid__item.grid__item_padding-left_40.width-1-1.width-1-2-sm.width-1-4-lg
+                  .card-link
+                    .card-link__content.card-link__content_margin_left_zero.card-link__content_margin_left_auto
+                      .card-link__box-link
+                        a(href="http://sportevents.kharkiv.ua/o-departamente.html" target="_blank")
+                          img.card-link__picture(src="img/partners/16sm.png", alt="Управление молодежи и спорта")
+            .section-partners__content-bottom
+              .section-partners__box-button
+                a.button#btnShowPartners Всі партнери
+        section.section.section-command#command
+          .container
+            .section-command__content-top
+              h2.section-command__heading команда  edu cluster
+            .section-command__content-slider-people
+              .swiper-container#swipeContainerTwo
+                .swiper-wrapper
+                  .swiper-slide
+                    .card-people
+                      .card-people__content-top
+                        .card-people__background-photo.card-people__background-photo_photo-2
+                      .card-people__content-bottom
+                        p.card-people__title Кристина Черкасова
+                        p.card-people__txt Chief Operating Officer
+                  .swiper-slide
+                    .card-people
+                      .card-people__content-top
+                        .card-people__background-photo.card-people__background-photo_photo-1
+                      .card-people__content-bottom
+                        p.card-people__title Анастасія Баранник
+                        p.card-people__txt PR and content-manager
+                  .swiper-slide
+                    .card-people
+                      .card-people__content-top
+                        .card-people__background-photo.card-people__background-photo_photo-3
+                      .card-people__content-bottom
+                        p.card-people__title Дмитро Давідьянц
+                        p.card-people__txt Partnership-manager
+                  .swiper-slide
+                    .card-people
+                      .card-people__content-top
+                        .card-people__background-photo.card-people__background-photo_photo-4
+                      .card-people__content-bottom
+                        p.card-people__title Олексій Чубаров
+                        p.card-people__txt Co-Founder EDU Cluster
+                  .swiper-slide
+                    .card-people
+                      .card-people__content-top
+                        .card-people__background-photo.card-people__background-photo_photo-5
+                      .card-people__content-bottom
+                        p.card-people__title Дар’я Лисицька
+                        p.card-people__txt Trend-manager
+                  .swiper-slide
+                    .card-people
+                      .card-people__content-top
+                        .card-people__background-photo.card-people__background-photo_photo-6
+                      .card-people__content-bottom
+                        p.card-people__title Ольга Чичина
+                        p.card-people__txt CEO Kharkiv EDU Cluster
+                  .swiper-slide
+                    .card-people
+                      .card-people__content-top
+                        .card-people__background-photo.card-people__background-photo_photo-7
+                      .card-people__content-bottom
+                        p.card-people__title Вікторія Мазя
+                        p.card-people__txt PR-manager
+                  .swiper-slide
+                    .card-people
+                      .card-people__content-top
+                        .card-people__background-photo.card-people__background-photo_photo-8
+                      .card-people__content-bottom
+                        p.card-people__title Катерина Борзенкова
+                        p.card-people__txt Project-manager
+                  .swiper-slide
+                    .card-people
+                      .card-people__content-top
+                        .card-people__background-photo.card-people__background-photo_photo-9
+                      .card-people__content-bottom
+                        p.card-people__title Антон Ганус
+                        p.card-people__txt Project-manager
+                  .swiper-slide
+                    .card-people
+                      .card-people__content-top
+                        .card-people__background-photo.card-people__background-photo_photo-10
+                      .card-people__content-bottom
+                        p.card-people__title Анна Гукова
+                        p.card-people__txt Project-manager
+              .slider-swiper-box-button.slider-people-swiper-box-button
+                .icon-btn-slider-left.button-slider-people-left-play.button-slider.button-slider-people.button-slider-people_special_margin_right.button-slider-people_full_position_right
+                .icon-btn-slider-right.button-slider-people-right-play.button-slider.button-slider-people.button-slider-people_full_position_left
+      section.section.section-contact#contact
+        .container
+          .section-contact__content-top
+            h2.section-contact__heading де нас знайти
+          .section-contact__content-basic.section-contact__content-basic_special-margin
+            footer.footer
+              .footer__content
+                .card-contact.card-contact_position_absolute
+                  .card-contact__content-top
+                    h4.card-contact__heading наші контакти
+                  .card-contact__content-middle
+                    ul.list-address.card-contact__list-address
+                      li.list-address__item Харків
+                      li.list-address__item ул. Коломенская, 3
+                      li.list-address__item 
+                        a.list-address__link(href="tel:+380980631557") +380980631557
+                      li.list-address__item 
+                        a.list-address__link(href="mailto:educluster@gmail.com") educluster@gmail.com
+                  .card-contact__content-bottom
+                    ul.list-social.card-contact__list-social
+                      li.list-social__item
+                        a.list-social__link(href="https://www.facebook.com/Kharkiv-Edu-Cluster-2403030723252153/" target="_blank")
+                          span.icon-social-fb.list-social__icon
+                      li.list-social__item
+                        a.list-social__link(href="https://t.me/EduClusterKharkiv" target="_blank")
+                          span.icon-social-tel.list-social__icon.list-social__icon_padding_right_3
+                      li.list-social__item
+                        a.list-social__link(href="https://www.instagram.com/kharkiv.edu.cluster/" target="_blank")
+                          span.icon-social-ins.list-social__icon
+                .footer__box-map
+                  .footer__map
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.8789959865453!2d36.2259171675037!3d50.01526458553398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s9G2R267H%2BX6!5e0!3m2!1sru!2sua!4v1573775349424!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     script(src="libs/jquery.min.js")
     script(src="libs/swiper.min.js")
     script(src="js/slider.js")

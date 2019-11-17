@@ -12,6 +12,16 @@
   margin: 0;
 }
 
+.grid {
+  &_margin {
+    &_top {
+      &_10 {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
 .grid .grid_height_full {
   height: 100%;
 }
@@ -34,6 +44,15 @@
 @media (min-width: $xxl) {
   .grid {
     margin: -43px;
+  }
+  .grid {
+    &_margin {
+      &_top {
+        &_43 {
+          margin-top: 43px;
+        }
+      }
+    }
   }
   .grid_special_margin {
     margin-left: -77px;

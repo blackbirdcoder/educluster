@@ -15,10 +15,12 @@ $swatch_12: #717171;
 $swatch_13: #a55050;
 $swatch_14: #0a0a0a;
 $swatch_15: #38aab8;
+$swatch_16: #f8f8f8;
 //overlay
 $overlay: rgba(10, 10, 10, 0.73);
 $overlayVideoSection: rgba(10, 10, 10, 0.3);
-
+//animation
+$transition: all 0.2s ease;
 //btn
 $btn_shadow: rgba(0, 0, 0, 0.25);
 $btn_hover: rgba(213, 0, 50, 0.5);
@@ -36,6 +38,7 @@ $gradient_btn_slider_hover: linear-gradient(180deg, #39aebb 0%, #4d9abf 100%);
 //section shadow
 $section_shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
 $slider_project_shadow: 2px 4px 7px 0px rgba(0, 0, 0, 0.4);
+$contact_card_shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
 //card
 $card_background_1: rgba(19, 19, 20, 0.42);
 // special radius

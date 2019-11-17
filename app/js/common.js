@@ -35,3 +35,18 @@ function removeClassCss(a, b) {
     menu.classList.remove(b);
   }
 }
+
+//--JQuery syntax--
+// open close section partners
+$("#btnShowPartners").click(function() {
+  $("#partnersContentHidden").toggle();
+});
+
+// menu click scroll
+$(document).ready(function() {
+  $("nav li a").click(function() {
+    elementClick = $(this).attr("href");
+    destination = $(elementClick).offset().top;
+    $("body,html").animate({ scrollTop: destination }, 2000);
+  });
+});

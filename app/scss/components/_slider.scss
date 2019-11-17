@@ -22,3 +22,18 @@
     }
   }
 }
+
+.slider-people-swiper-box-button {
+  margin-top: 10px;
+  @media (min-width: $lg) {
+    display: flex;
+    justify-content: center;
+  }
+  @media (min-width: $xxl) {
+    margin-top: 0;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    z-index: 1000;
+  }
+}

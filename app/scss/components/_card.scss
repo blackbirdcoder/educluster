@@ -243,3 +243,219 @@
     }
   }
 }
+
+.card-link {
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    width: 225px;
+    height: 125px;
+    @media (min-width: $md) {
+      width: 230px;
+      height: 200px;
+    }
+    @media (min-width: $lg) {
+      width: 220px;
+      height: 185px;
+    }
+    &_margin {
+      &_left {
+        &_zero {
+          @media (min-width: $sm) {
+            margin-left: 0;
+          }
+        }
+        &_auto {
+          @media (min-width: $lg) {
+            margin-left: auto;
+          }
+        }
+      }
+      &_right {
+        &_zero {
+          @media (min-width: $sm) {
+            margin-right: 0;
+          }
+        }
+        &_auto {
+          @media (min-width: $lg) {
+            margin-right: auto;
+          }
+        }
+      }
+    }
+  }
+  &__box-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  &__picture {
+    max-width: 200px;
+    max-height: 120px;
+    display: block;
+    margin: auto;
+    @media (min-width: $md) {
+      max-width: 205px;
+      max-height: 165px;
+    }
+    @media (min-width: $lg) {
+      max-width: 200px;
+      max-height: 155px;
+    }
+  }
+}
+
+.card-people {
+  margin: auto;
+  text-align: center;
+  padding: 5px;
+  width: 218px;
+  height: 300px;
+  @media (min-width: $md) {
+    width: 210px;
+    height: 278px;
+  }
+  @media (min-width: $lg) {
+    width: 200px;
+  }
+  &__content-top {
+  }
+  &__background-photo {
+    margin: 0;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    @media (min-width: $md) {
+      width: 180px;
+      height: 180px;
+    }
+    &_photo-1 {
+      background-image: url(../img/people/anastasia-b.jpg);
+      background-position-x: -29px;
+      background-position-y: -34px;
+      background-size: 138%;
+    }
+    &_photo-2 {
+      background-image: url(../img/people/kristina-che.jpg);
+      background-position-x: -32px;
+      background-position-y: -22px;
+      background-size: 144%;
+    }
+    &_photo-3 {
+      background-image: url(../img/people/dmitry-d.jpg);
+      background-position-x: -37px;
+      background-position-y: -29px;
+      background-size: 144%;
+    }
+    &_photo-4 {
+      background-image: url(../img/people/aleks-ch.jpg);
+      background-position-x: -4px;
+      background-position-y: -23px;
+      background-size: 106%;
+    }
+    &_photo-5 {
+      background-image: url(../img/people/darya-li.jpg);
+      background-position-x: -19px;
+      background-position-y: -2px;
+      background-size: 120%;
+    }
+    &_photo-6 {
+      background-image: url(../img/people/olga_cici.jpg);
+      background-position-x: -17px;
+      background-position-y: -35px;
+      background-size: 117%;
+    }
+    &_photo-7 {
+      background-image: url(../img/people/viktoria-m.jpg);
+      background-position-x: -17px;
+      background-position-y: -14px;
+      background-size: 117%;
+    }
+    &_photo-8 {
+      background-image: url(../img/people/kateryna-bo.jpg);
+      background-position-x: -6px;
+      background-position-y: -3px;
+      background-size: 116%;
+    }
+    &_photo-9 {
+      background-image: url(../img/people/anton-ga.jpg);
+      background-position-x: -9px;
+      background-position-y: -9px;
+      background-size: 119%;
+    }
+    &_photo-10 {
+      background-image: url(../img/people/anna-gy.jpg);
+      background-position-x: -8px;
+      background-position-y: -13px;
+      background-size: 107%;
+    }
+  }
+
+  &__content-bottom {
+    margin-top: 25px;
+    @media (min-width: $xxl) {
+      margin-top: 18px;
+    }
+  }
+  &__title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: $swatch_5;
+  }
+  &__txt {
+    @extend .card-people__title;
+    font-weight: 400;
+    font-size: 15px;
+  }
+}
+
+.card-contact {
+  margin: auto;
+  padding: 36px;
+  width: 285px;
+  border-radius: 4px;
+  background-color: $swatch_16;
+  // background-color: rgb(219, 92, 92);
+  box-shadow: $contact_card_shadow;
+  &__content-top {
+    text-align: center;
+  }
+  &__heading {
+    text-transform: uppercase;
+    color: $swatch_5;
+    font-size: 24px;
+  }
+  &__content-middle {
+    margin-top: 30px;
+  }
+  &__list-address {
+  }
+  &__content-bottom {
+    margin-top: 16px;
+  }
+  &__list-social {
+  }
+  &_position {
+    &_absolute {
+      @media (min-width: $md) {
+        position: absolute;
+        top: 82px;
+        left: 7px;
+        z-index: 1000;
+      }
+      @media (min-width: $lg) {
+        left: 60px;
+      }
+    }
+  }
+}
