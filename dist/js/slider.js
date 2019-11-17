@@ -3,8 +3,8 @@ var swiper = new Swiper("#swiperContainerOne", {
   slidesPerView: 1,
   spaceBetween: 40,
   navigation: {
-    nextEl: ".button-slider-right-play",
-    prevEl: ".button-slider-left-play"
+    nextEl: ".button-slider-left-play",
+    prevEl: ".button-slider-right-play"
   },
   loop: true,
   breakpoints: {
@@ -24,8 +24,8 @@ var swiperTwo = new Swiper("#swipeContainerTwo", {
   slidesPerView: 1,
   spaceBetween: 40,
   navigation: {
-    nextEl: ".button-slider-people-left-play",
-    prevEl: ".button-slider-people-right-play"
+    nextEl: ".button-slider-people-right-play",
+    prevEl: ".button-slider-people-left-play"
   },
   loop: true,
   breakpoints: {
